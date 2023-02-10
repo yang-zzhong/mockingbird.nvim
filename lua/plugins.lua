@@ -24,4 +24,10 @@ return require('packer').startup(function(use)
   use { "fatih/vim-go" }
   use {'neoclide/coc.nvim', branch = 'release'}
 
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  
+  use { 'majutsushi/tagbar' }
+
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
 end)

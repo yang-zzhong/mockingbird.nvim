@@ -1,10 +1,6 @@
 
 require("nvim-tree").setup({
-    create_in_closed_folder = true,
     hijack_cursor = true,
-    open_on_setup = true,
-    open_on_setup_file = true,
-    focus_empty_on_setup = true,
     sync_root_with_cwd = true,
     view = {
       adaptive_size = false,
