@@ -16,6 +16,11 @@ return require('packer').startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  use {
+      'uloco/bluloco.nvim',
+      requires = { 'rktjmp/lush.nvim' }
+  }
+
   use { "fatih/vim-go" }
   use {'neoclide/coc.nvim', branch = 'release'}
 
