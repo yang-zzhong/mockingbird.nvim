@@ -10,5 +10,12 @@ vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
+vim.opt.clipboard = 'unnamedplus'
 
 require('plugins')
+
+vim.g.go_highlight_function_calls = 1
+vim.g.go_highlight_fields = 1
+vim.g.go_highlight_types = 1
+vim.g.go_highlight_variable_declarations = 1
+vim.g.go_highlight_operators = 1
