@@ -7,5 +7,4 @@ function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map('n', 't', ":TagbarToggle '<CR>", {silent = true} )
-map("n", "<C-t>", ":NvimTreeToggle '<CR>", { silent = true })
+map('n', 'tag', ":TagbarToggle '<CR>", {silent = true} )

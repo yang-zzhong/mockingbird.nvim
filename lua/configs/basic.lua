@@ -12,6 +12,7 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 vim.opt.clipboard = 'unnamedplus'
+vim.opt.foldmethod = 'indent'
 
 require('plugins')
 
