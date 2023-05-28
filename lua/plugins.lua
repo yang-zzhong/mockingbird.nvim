@@ -47,4 +47,11 @@ return require('packer').startup(function(use)
     },
   }
 
+  use {
+    "justinsgithub/oh-my-monokai.nvim",
+    config = function()
+      require("oh-my-monokai").setup()
+    end
+  }
+
 end)

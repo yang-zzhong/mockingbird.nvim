@@ -9,4 +9,4 @@ require('configs.tagbar')
 require('configs.bufferline')
 require('configs.lualine-nvim')
 
-vim.cmd('colorscheme pablo')
+vim.cmd('colorscheme oh-my-monokai')
