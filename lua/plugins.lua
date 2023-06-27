@@ -16,9 +16,13 @@ return require('packer').startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  -- use {
+  --     'uloco/bluloco.nvim',
+  --     requires = { 'rktjmp/lush.nvim' }
+  -- }
+
   use {
-      'uloco/bluloco.nvim',
-      requires = { 'rktjmp/lush.nvim' }
+      'hachy/eva01.vim',
   }
 
   use { "fatih/vim-go" }
@@ -45,13 +49,6 @@ return require('packer').startup(function(use)
       'nvim-lua/plenary.nvim',
       'stevearc/dressing.nvim', -- optional for vim.ui.select
     },
-  }
-
-  use {
-    "justinsgithub/oh-my-monokai.nvim",
-    config = function()
-      require("oh-my-monokai").setup()
-    end
   }
 
 end)
